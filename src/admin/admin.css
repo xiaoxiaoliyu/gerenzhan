@@ -1,0 +1,87 @@
+/* Admin Panel Styles */
+.admin-panel{min-height:100vh;background:#0a0a0a;color:#e8e8e8;font-family:'Inter','Noto Sans SC',sans-serif}
+.admin-header{display:flex;align-items:center;justify-content:space-between;padding:16px 32px;border-bottom:1px solid rgba(255,255,255,0.06);background:rgba(0,0,0,0.5)}
+.admin-header h1{font-size:1.1rem;font-weight:600;color:#fff}
+.admin-header h1 span{color:#1AC2D9}
+.admin-header-right{display:flex;align-items:center;gap:16px}
+.admin-header-right span{font-size:0.82rem;color:#888}
+.admin-btn{background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.08);color:#e8e8e8;padding:7px 18px;border-radius:8px;font-size:0.82rem;cursor:pointer;transition:all 0.2s}
+.admin-btn:hover{background:rgba(255,255,255,0.1)}
+.admin-btn-danger{background:rgba(239,68,68,0.1);border-color:rgba(239,68,68,0.2);color:#ef4444}
+.admin-btn-danger:hover{background:rgba(239,68,68,0.2)}
+.admin-btn-primary{background:#1AC2D9;border:none;color:#050505;padding:8px 20px;border-radius:8px;font-size:0.85rem;font-weight:600;cursor:pointer;transition:all 0.2s}
+.admin-btn-primary:hover{background:#0E99AC}
+.admin-btn-primary:disabled{opacity:0.5;cursor:not-allowed}
+.admin-btn-sm{padding:5px 12px;font-size:0.78rem}
+.admin-body{padding:32px;max-width:1200px;margin:0 auto}
+.admin-section{margin-bottom:40px}
+.admin-section h2{font-size:1.3rem;font-weight:600;margin-bottom:20px;color:#fff}
+.admin-section-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:20px}
+.admin-section-header h2{margin-bottom:0}
+
+/* Login */
+.admin-login{min-height:100vh;display:flex;align-items:center;justify-content:center;background:#0a0a0a}
+.admin-login-card{background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.06);border-radius:16px;padding:40px;width:100%;max-width:400px}
+.admin-login-card h2{font-size:1.5rem;font-weight:700;margin-bottom:4px;color:#fff;text-align:center}
+.admin-login-sub{font-size:0.82rem;color:#666;margin-bottom:28px;text-align:center}
+.admin-login-card form{display:flex;flex-direction:column;gap:14px}
+.admin-login-card input{padding:12px 16px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.08);border-radius:8px;color:#e8e8e8;font-size:0.85rem;outline:none;transition:border-color 0.2s}
+.admin-login-card input:focus{border-color:#1AC2D9}
+.admin-login-card input::placeholder{color:#555}
+.admin-login-card .admin-btn-primary{width:100%;padding:12px;margin-top:4px}
+.admin-error{background:rgba(239,68,68,0.1);border:1px solid rgba(239,68,68,0.2);color:#ef4444;padding:10px 14px;border-radius:8px;font-size:0.82rem}
+
+/* Stats Grid */
+.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-bottom:32px}
+.stat-card{background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.06);border-radius:12px;padding:24px}
+.stat-card .number{font-size:2rem;font-weight:700;color:#1AC2D9;margin-bottom:4px}
+.stat-card .label{font-size:0.78rem;color:#666}
+.stat-chart{background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.06);border-radius:12px;padding:24px;margin-top:16px}
+.stat-chart h3{font-size:0.9rem;font-weight:600;margin-bottom:16px;color:#aaa}
+.chart-bar{display:flex;align-items:center;gap:8px;margin-bottom:6px}
+.chart-bar .label{font-size:0.72rem;color:#666;width:80px;text-align:right;flex-shrink:0}
+.chart-bar .fill{height:20px;background:#1AC2D9;border-radius:4px;min-width:4px;transition:width 0.5s}
+.chart-bar .count{font-size:0.72rem;color:#888;width:40px}
+.top-paths{background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.06);border-radius:12px;padding:24px;margin-top:16px}
+.top-paths h3{font-size:0.9rem;font-weight:600;margin-bottom:12px;color:#aaa}
+.path-row{display:flex;justify-content:space-between;padding:6px 0;font-size:0.82rem;border-bottom:1px solid rgba(255,255,255,0.03)}
+.path-row:last-child{border-bottom:none}
+.path-row .path{color:#888}.path-row .count{color:#1AC2D9;font-weight:600}
+
+/* Projects Table */
+.admin-table{width:100%;border-collapse:collapse}
+.admin-table th{text-align:left;padding:10px 14px;font-size:0.78rem;color:#666;font-weight:500;border-bottom:1px solid rgba(255,255,255,0.06);text-transform:uppercase;letter-spacing:0.05em}
+.admin-table td{padding:10px 14px;font-size:0.85rem;color:#ccc;border-bottom:1px solid rgba(255,255,255,0.03)}
+.admin-table tr:hover td{background:rgba(255,255,255,0.02)}
+.admin-table .actions{display:flex;gap:8px}
+.admin-table .tag{display:inline-block;padding:2px 8px;background:rgba(26,194,217,0.08);color:#1AC2D9;border-radius:4px;font-size:0.72rem}
+
+/* Modal */
+.admin-modal-overlay{position:fixed;inset:0;background:rgba(0,0,0,0.8);z-index:2000;display:flex;align-items:center;justify-content:center}
+.admin-modal{background:#161616;border:1px solid rgba(255,255,255,0.08);border-radius:16px;width:100%;max-width:560px;max-height:90vh;overflow-y:auto;padding:32px}
+.admin-modal h3{font-size:1.2rem;font-weight:600;margin-bottom:20px;color:#fff}
+.admin-modal .form-group{margin-bottom:16px}
+.admin-modal .form-group label{display:block;font-size:0.78rem;color:#888;margin-bottom:6px;font-weight:500}
+.admin-modal .form-group input,.admin-modal .form-group textarea,.admin-modal .form-group select{width:100%;padding:10px 14px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.08);border-radius:8px;color:#e8e8e8;font-size:0.85rem;outline:none;font-family:inherit;transition:border-color 0.2s}
+.admin-modal .form-group input:focus,.admin-modal .form-group textarea:focus{border-color:#1AC2D9}
+.admin-modal .form-group textarea{min-height:80px;resize:vertical}
+.admin-modal .form-row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.admin-modal .modal-actions{display:flex;gap:12px;margin-top:24px;justify-content:flex-end}
+
+/* Image Upload */
+.upload-zone{border:2px dashed rgba(255,255,255,0.1);border-radius:12px;padding:32px;text-align:center;cursor:pointer;transition:all 0.2s;position:relative;overflow:hidden}
+.upload-zone:hover,.upload-zone.dragging{border-color:#1AC2D9;background:rgba(26,194,217,0.05)}
+.upload-zone .icon{font-size:2rem;margin-bottom:8px}
+.upload-zone p{font-size:0.85rem;color:#666}
+.upload-zone .preview{max-height:200px;max-width:100%;border-radius:8px;margin-top:12px}
+.upload-zone .preview-container{position:relative;display:inline-block}
+.upload-zone .preview-remove{position:absolute;top:4px;right:4px;width:24px;height:24px;border-radius:50%;background:rgba(0,0,0,0.7);color:#fff;display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:14px;border:none}
+.upload-progress{height:3px;background:rgba(255,255,255,0.1);border-radius:2px;margin-top:8px;overflow:hidden}
+.upload-progress .bar{height:100%;background:#1AC2D9;border-radius:2px;transition:width 0.3s}
+
+/* Back to site */
+.admin-back-link{color:#666;font-size:0.82rem;text-decoration:none;transition:color 0.2s;display:inline-flex;align-items:center;gap:4px}
+.admin-back-link:hover{color:#1AC2D9}
+
+/* Empty State */
+.admin-empty{padding:40px;text-align:center;color:#555;font-size:0.9rem}
