@@ -183,7 +183,7 @@ function About() {
         <div className="about-grid">
           <div className="about-avatar-wrapper">
             <div className="about-avatar">
-              <img src="/avatar.png" alt="Kai V" className="about-avatar-img" />
+              <img src="avatar.png" alt="Kai V" className="about-avatar-img" />
             </div>
             <div className="about-avatar-ring" />
           </div>
